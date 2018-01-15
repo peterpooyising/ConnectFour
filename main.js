@@ -42,7 +42,7 @@ const render = () => {
       // Because I am using template literals, I can omit the "" quotes that were neccessary when describing HTML attributes. However, just for practice, I will include them. e.g
       //     doc = doc + `<circle onclick=clickCircle(${i}, ${j}) stroke=#000000 stroke-width=2px fill=${color} r=30px cx=${j * 100 + 100 }px cy=${i * 100 + 110}px></circle>`;
       // will work.
-      doc = doc + `<circle onclick="clickCircle(${j},${i})" stroke="#000000" stroke-width="2px" fill="${color}" r="10vw" cx="${j * 110 + 65 }px" cy="${i * 140 }px"></circle>`; // IMPORTANT: j represents the x-coordinate, i represents y-coordinate.
+      doc = doc + `<circle onclick="clickCircle(${j},${i})" stroke="#000000" stroke-width="2px" fill="${color}" r="5%" cx="${j * 110 + 65 }px" cy="${i * 140 }px"></circle>`; // IMPORTANT: j represents the x-coordinate, i represents y-coordinate.
       // Rows & columns are different from x & y coordinates.
     };
   };

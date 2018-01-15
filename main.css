@@ -453,6 +453,8 @@ p {
   background: #205dff; }
   .button:last-of-type {
     margin-right: 0; }
+  .button:hover, .button:focus {
+    background: #7f7fff; }
 
 #board {
   background: #205dff;
