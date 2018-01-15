@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
     <!-- Own stylesheet -->
     <link rel="stylesheet" href="main.css">
   </head>
@@ -16,16 +18,36 @@
     <div class="description">
       <h1 class="connectfour"><i>Connect Four</i></h1>
       <h1 class="ai"><i>(with Unbeatable AI)</i></h1>
-      <p class="instructions">Connect four discs of the same color together either horizontally/vertically/diagonally to win. Click on an empty hole to put your disc.</p>
-    </div>
-    <div class="buttons">
-      <button onclick="restart()" class="button restart waves-effect waves-light btn">Restart</button> <!-- button has a RESTART function in Javascript. -->
-      <button class="button computer waves-effect waves-light btn">vs Computer</button>
+      <p class="instructions">Connect four discs of the same color together either horizontally/vertically/diagonally to win. Play with another person or against an unbeatable AI. Click on an empty hole to put your disc.</p>
+      <div class="buttons">
+        <button onclick="restart()" class="button restart waves-effect waves-light btn">Restart</button> <!-- button has a RESTART function in Javascript. -->
+        <button class="button computer waves-effect waves-light btn">vs Computer</button>
+      </div>
     </div>
     <div id="board">
       <svg id="svg" viewBox="0 0 800 700" align="xMinYMin meet"></svg>
     </div>
-    <h3 id="winningmessage"></h3>
+
+    <!-- Winning Message (Modal) -->
+    <div class="modal fade" id="winningmessage" tabindex="-1" role="dialog" aria-labelledby="winningmessage" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="winner"></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Thank you for playing the game! Click on the restart button after this if you wish to play again.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Put own JS script below before <body> so that the browser executes our JS script only after the whole DOM is loaded. If we place it in the <head> of the html, the script will access an element even before it has actually been rendered in the DOM, so will end up seeing the null reference error. Or can use:
         window.onload = function() {
         }
@@ -35,6 +57,10 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <!-- Popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
     <script src="main.js"></script>
   </body>
 </html>

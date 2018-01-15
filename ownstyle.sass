@@ -37,7 +37,6 @@ p
   justify-content: space-around
   width: 100%
   margin: 0 0 1em
-  padding: 1em
 
 .button
   display: inline-block
@@ -60,13 +59,79 @@ p
   height: 450px
   max-height: 100vh
   border: 2px solid #000
+  display: flex
+  justify-content: center
+  align-items: center
 
-@media screen and (min-width: 1200px)
-  #board
-    margin: 0 auto
-    width: 50%
-    height: 70%
 
 svg
   width: inherit
   height: inherit
+
+.modal
+  display: inline-block
+  max-height: fit-content
+  max-width: fit-content
+  height: none
+
+.modal-dialog
+  margin: 0
+  max-width: none
+  display: inline-block
+
+#winner
+  text-transform: uppercase
+  font-size: 2rem
+  text-align: center
+
+// ========== Board responsive layout ====================
+@media screen and (max-width: 725px) and (min-width: 430px)
+  #board
+    margin: 0 auto
+    width: 90vw
+    height: 70vh
+
+@media screen and (max-width: 1200px) and (min-width: 725px)
+  #board
+    margin: 0 auto
+    width: 70vw
+    height: 55vh
+
+@media screen and (min-width: 1200px)
+  #board
+    margin: 0 auto
+    width: 35vw
+    height: 65vh
+
+// ========== Svg responsive layout ====================
+@media screen and (max-width: 725px) and (min-width: 430px)
+  svg
+    width: 85vw
+    height: 60vh
+
+@media screen and (max-width: 1200px) and (min-width: 725px)
+  svg
+    width: 60vw
+    height: 45vh
+
+@media screen and (min-width: 1200px)
+  svg
+    width: 28vw
+    height: 60vh
+
+// =========  Buttons and text responsive layout ===============
+@media screen and (max-width: 725px) and (min-width: 430px)
+  .description
+    width: 90vw
+
+@media screen and (max-width: 1200px) and (min-width: 725px)
+  .description
+    width: 70vw
+
+@media screen and (min-width: 1200px)
+  .description
+    width: 35vw
+
+@media screen and (min-width: 430px)
+  .buttons
+    justify-content: space-between

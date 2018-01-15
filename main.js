@@ -175,7 +175,8 @@ function checkForWinner() {
 
 function winningMessage(color) {
   gameInPlay = false; // change the gameInPlay value to false so the player cannot click on any more circles.
-  document.getElementById("winningmessage").innerHTML = `${color} wins!`;
+  $('#winningmessage').modal('show')
+  document.getElementById("winner").innerHTML = `${color} wins!`;
 }
 
 restart(); // Initialise the starting grid at the start
