@@ -152,8 +152,8 @@ function checkForWinner() {
           // if the circle is one of the first 4 RIGHTMOST circles in the row
           if (j === 3 || j === 4 || j === 5 || j === 6 ) {
             if (grid[i + 1][j - 1].color === circle.color &&
-                grid[i + 2][j - 1].color === circle.color &&
-                grid[i + 3][j - 1].color === circle.color) {
+                grid[i + 2][j - 2].color === circle.color &&
+                grid[i + 3][j - 3].color === circle.color) {
               // alert(circle.color + " wins!");
               winningMessage(circle.color);
               return;
