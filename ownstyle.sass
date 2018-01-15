@@ -76,13 +76,15 @@ svg
 
 .modal-dialog
   margin: 0
-  max-width: none
-  display: inline-block
+
+.modal-header, .modal-footer
+  display: flex
+  justify-content: center
 
 #winner
   text-transform: uppercase
   font-size: 2rem
-  text-align: center
+
 
 // ========== Board responsive layout ====================
 @media screen and (max-width: 725px) and (min-width: 430px)
