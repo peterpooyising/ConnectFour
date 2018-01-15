@@ -81,7 +81,8 @@ p {
 
 svg {
   width: inherit;
-  height: inherit; }
+  height: inherit;
+  cursor: pointer; }
 
 .modal {
   display: inline-block;
@@ -120,6 +121,9 @@ svg {
 #winner {
   text-transform: uppercase;
   font-size: 2rem; }
+
+.footer {
+  font-size: 0.8rem; }
 
 @media screen and (max-width: 725px) and (min-width: 430px) {
   #board {
