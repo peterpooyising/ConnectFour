@@ -174,15 +174,10 @@ function checkForWinner() {
 // }
 
 function winningMessage(color) {
-  console.log("module fired!")
+  // console.log("module fired!")
   gameInPlay = false; // change the gameInPlay value to false so the player cannot click on any more circles.
   document.getElementById("winner").innerHTML = `${color} wins!`;
-  $('#winningmessage').modal({
-    backdrop: true,
-    keyboard: true,
-    focus: true,
-    show: true
-  })
+  $('#winningmessage').modal('show')
 }
 
 restart(); // Initialise the starting grid at the start

@@ -102,9 +102,6 @@ svg {
   -ms-flex-pack: center;
   justify-content: center; }
 
-.btn .btn-secondary {
-  background: pink; }
-
 #winner {
   text-transform: uppercase;
   font-size: 2rem; }
