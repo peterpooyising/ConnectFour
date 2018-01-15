@@ -2,21 +2,39 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Connect Four</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <!-- Own stylesheet -->
     <link rel="stylesheet" href="main.css">
-
   </head>
+
   <body>
-    <h1>Connect Four (with Unbeatable AI)</h1>
-    <h2>Rules: Connect four discs together either horizontally/vertically/diagonally to win.</h2>
-    <p>Click on a empty hole to drop your disc.</p>
-    <div id="board">
-      <svg id="svg"></svg>
+    <div class="description">
+      <h1 class="connectfour"><i>Connect Four</i></h1>
+      <h1 class="ai"><i>(with Unbeatable AI)</i></h1>
+      <p class="instructions">Connect four discs of the same color together either horizontally/vertically/diagonally to win. Click on an empty hole to put your disc.</p>
     </div>
+    <div class="buttons">
+      <button onclick="restart()" class="button restart waves-effect waves-light btn">Restart</button> <!-- button has a RESTART function in Javascript. -->
+      <button class="button computer waves-effect waves-light btn">vs Computer</button>
+    </div>
+    <div id="board">
+      <svg id="svg" viewBox="0 0 800 700" align="xMinYMin meet"></svg>
+    </div>
+    <h3 id="winningmessage"></h3>
     <!-- Put own JS script below before <body> so that the browser executes our JS script only after the whole DOM is loaded. If we place it in the <head> of the html, the script will access an element even before it has actually been rendered in the DOM, so will end up seeing the null reference error. Or can use:
         window.onload = function() {
         }
     -->
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <script src="main.js"></script>
   </body>
 </html>
