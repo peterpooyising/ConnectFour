@@ -15,6 +15,7 @@
   </head>
 
   <body>
+    <!-- Description -->
     <div class="description">
       <h1 class="connectfour"><i>Connect Four</i></h1>
       <h1 class="ai"><i>(with Smart AI)</i></h1>
@@ -24,10 +25,12 @@
         <button class="button computer waves-effect waves-light btn">vs Computer</button>
       </div>
     </div>
+
     <!-- BOARD -->
     <div id="board">
-      <svg id="svg" viewBox="0 0 800 700" align="xMinYMin meet"></svg>
+      <svg id="svg" viewBox="0 0 800 700" align="xMaxYMax meet"></svg>
     </div>
+
     <!-- Winning Message (Modal) -->
     <div class="modal fade" id="winningmessage" tabindex="-1" role="dialog" aria-labelledby="winningmessage" aria-hidden="true">
       <div class="modal-dialog" role="document">
@@ -44,20 +47,20 @@
         </div>
       </div>
     </div>
-    <footer><p class="description footer">For best experience please use Google Chrome. This game is unable to work in Firefox at creation(15 Jan 2018). Test. </p></footer>
+    <footer><p class="description footer">For best experience please use Google Chrome. This game is unable to work in Firefox at creation(15 Jan 2018). Please create a horizontal win in the bottom row and restart the game after winning, everything should work as intended.</p></footer>
     <!-- Put own JS script below before <body> so that the browser executes our JS script only after the whole DOM is loaded. If we place it in the <head> of the html, the script will access an element even before it has actually been rendered in the DOM, so will end up seeing the null reference error. Or can use:
         window.onload = function() {
         }
     -->
 
     <!--Import jQuery before materialize.js-->
-    <script type="text/javascript" defer src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <!-- Compiled and minified JavaScript -->
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <!-- Popper.js -->
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <!-- Bootstrap JS -->
-    <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
-    <script defer src="main.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
   </body>
 </html>
