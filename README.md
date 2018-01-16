@@ -1,7 +1,6 @@
 # ConnectFour
 This is a project that I did after the bootcamp to explore things which were not taught/used much during my Bootcamp 
 - Javascript and Algorithms
-<br>
 I decided to create a game because I like developing games(aside from creating websites). I chose
 ConnectFour because it was my favourite childhood game. The code is written in vanilla Javascript. 
 
