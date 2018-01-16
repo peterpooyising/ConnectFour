@@ -18,11 +18,11 @@
     <!-- Description -->
     <div class="description">
       <h1 class="connectfour"><i>Connect Four</i></h1>
-      <h1 class="ai"><i>(with Smart AI)</i></h1>
-      <p class="instructions">Connect four discs of the same color together either horizontally/vertically/diagonally to win. Play with another person or against an smart AI. Click on an empty hole to put your disc.</p>
+      <!-- <h1 class="ai"><i>(with Smart AI)</i></h1> -->
+      <p class="instructions">Two player game. Connect four discs of the same color together either horizontally/vertically/diagonally to win<!--or against an smart AI -->. Click on an empty hole to put your disc.</p>
       <div class="buttons">
         <button onclick="restart()" class="button restart waves-effect waves-light btn">Restart</button> <!-- button has a RESTART function in Javascript. -->
-        <button class="button computer waves-effect waves-light btn">vs Computer</button>
+        <!-- <button onclick="computer()" class="button computer waves-effect waves-light btn">vs Computer</button> -->
       </div>
     </div>
 
@@ -47,7 +47,7 @@
         </div>
       </div>
     </div>
-    <footer><p class="description footer">For best experience please use Google Chrome. This game is unable to work in Firefox at creation(15 Jan 2018). Please create a horizontal win in the bottom row and restart the game after winning, everything should work as intended.</p></footer>
+    <footer><p class="description footer">For best experience please use Google Chrome. This game is unable to work in Firefox at creation(15 Jan 2018). Please create a horizontal win in the bottom row and restart the game after winning, everything should work as intended after that. An AI function will be implemented once I have knowledge to do so.</p></footer>
     <!-- Put own JS script below before <body> so that the browser executes our JS script only after the whole DOM is loaded. If we place it in the <head> of the html, the script will access an element even before it has actually been rendered in the DOM, so will end up seeing the null reference error. Or can use:
         window.onload = function() {
         }
@@ -62,5 +62,6 @@
     <!-- Bootstrap JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
     <script src="main.js"></script>
+    <script src="computer.js"></script>
   </body>
 </html>
