@@ -2,7 +2,7 @@
 
 https://peterpooyising.github.io/ConnectFour/
 
-<strong>This is a project that I did after the bootcamp to explore things which were not taught/used much during my Bootcamp 
+<strong>This is a project that I did to explore things which were not taught/used much during my Bootcamp 
 - Javascript and Algorithms</strong>
 
 I decided to create a game because I like developing games(aside from creating websites). I chose
